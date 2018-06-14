@@ -1,0 +1,25 @@
+
+#info_title{
+    color: #f0ad4e;
+    margin-left: 50px;
+    font-size: 25px;
+    margin-top: 30px;
+}
+hr{
+    color: red;
+}
+
+.my_info{
+    text-align: center;
+}
+
+.my_info div{
+    margin-top: 10px;
+}
+
+.deleteIcon{
+    position: relative;
+    left:180px;
+    bottom: 235px;
+}
+

@@ -1,0 +1,130 @@
+body {
+	background-color: #f2f2f2;
+}
+
+#box {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	background-color: white;
+}/*整个网页宽度为浏览器的80%*/
+
+#logoimg1 {
+	width: 100%;
+	height: 200px;
+}/*最上方滚动图片*/
+
+.nav1 {
+	width: initial;
+	padding-top: 10px;
+}/*郑州轻工业学院,登录,注册的容器*/
+
+.navigation1 {
+	height: 35px;
+	text-align: center;
+	display: table;
+	background-color: #ee6e73;
+	vertical-align: middle;
+}/*郑州轻工业学院...12个栅格*/
+
+.navigation1-a {
+	display: block;
+	vertical-align: middle;
+	color: #fff;
+	padding-top: 8px;
+}/*郑州轻工业学院...栅格中的链接:郑州轻工业学院,注册,登录*/
+
+.navigation2 {
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	padding-top: 5px;
+}/*六个大的导航:首页...*/
+
+.navli {
+	background-color: floralwhite;
+}
+
+#icontent {
+	border: none;
+	width: 100%;
+}/*框架，点击导航栏中的链接，将内容加载到此处*/
+
+#icontent1{
+	border: none;
+	width: 100%;
+	height:300px ;
+}
+
+#register,#Login {
+	position: fixed;
+	_position: absolute;
+	top: 50%;
+	left: 50%;
+	border: 1px black solid;
+	/*弹出框背景色*/
+	display: none;
+}/*注册弹出框*/
+
+#movingbar1,#movingbar2 {
+	background-color: #c5f8f9;
+}/*注册页面中最上方，点击此处可以移动注册页面*/
+
+#movingbar1>p,#movingbar2>p {
+	text-align: center;
+}/*欢迎注册*/
+
+.minimize {
+	float: right;
+	height: inherit;
+	width: 7%;
+}/*关闭注册页面的图标*/
+
+.verification1 {
+	width: 55%;
+	float: left;
+}/*请输入验证码*/
+
+.verification2 {
+	width: 40%;
+	left: 8px;
+	position: relative;
+}/*获取验证码*/
+
+.text1 {
+	width: 85%;
+	margin-left: 7.5%;
+}/*注册弹出框中的文本输入框*/
+
+.text2 {
+	width: 280px;
+	margin-left:5%;
+}
+
+.btn-success {
+	width: 85%;
+	margin-left: 7.5%;
+}/*注册按钮*/
+
+.registerBg {
+	margin-top: -10px;
+	opacity: 0.8;
+}
+
+#form {
+	left: 30px;
+	position: absolute;
+	bottom: 100px;
+}
+
+#form1 {
+	align-content: center;
+	position: absolute;
+	bottom: 150px;
+	left: 30px;
+}
+
+#form1 span {
+	float: right;
+}
+

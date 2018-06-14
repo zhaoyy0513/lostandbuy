@@ -1,0 +1,24 @@
+#lostThing{
+	margin-left: 25%;
+	margin-top: 5%;
+}/*表单位置固定在页面中间*/
+
+.form-control{
+
+	width: 300px;
+}/*文本输入框的宽度*/
+#description{
+	margin-top: -25px;
+	margin-left: 5px;
+}/*多行文本框*/
+#file0{
+	margin-top: -25px;
+	margin-left: 150px;
+}/*图片上传*/
+#last{
+	margin-left: 200px;
+}/*提交按钮*/
+.prompt{
+	margin-left: 70px;
+}
+/*label文本右对齐*/

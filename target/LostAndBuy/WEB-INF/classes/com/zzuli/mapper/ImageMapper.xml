@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zzuli.dao.ImageMapper">
+  <resultMap id="BaseResultMap" type="com.zzuli.pojo.Image">
+    <id column="iId" jdbcType="INTEGER" property="iid" />
+    <result column="tId" jdbcType="INTEGER" property="tid" />
+    <result column="iUrl" jdbcType="VARCHAR" property="iurl" />
+  </resultMap>
+
+  <resultMap id="backImg" type="com.zzuli.pojo.Image">
+    <result column="iId" jdbcType="INTEGER" property="iid" />
+    <result column="tId" jdbcType="INTEGER" property="tid" />
+    <result column="iUrl" jdbcType="VARCHAR" property="iurl" />
+  </resultMap>
+
+  <select id="selectAllImages" resultMap="backImg">
+    select * from image
+  </select>
+
+  <sql id="Base_Column_List">
+    iId, tId, iUrl
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from image
+    where iId = #{tid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from image
+    where iId = #{tid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.zzuli.pojo.Image">
+    insert into image (iId, tId, iUrl
+      )
+    values (#{iid,jdbcType=INTEGER}, #{tid,jdbcType=INTEGER}, #{iurl,jdbcType=VARCHAR}
+      )
+  </insert>
+
+  <update id="updateByPrimaryKey" parameterType="com.zzuli.pojo.Image">
+    update image
+    set tId = #{tid,jdbcType=INTEGER},
+      iUrl = #{iurl,jdbcType=VARCHAR}
+    where iId = #{tid,jdbcType=INTEGER}
+    <!-- 通过寻找iId=tid来进行修改 -->
+  </update>
+
+
+
+</mapper>

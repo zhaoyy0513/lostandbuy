@@ -1,0 +1,52 @@
+
+body {
+	margin: 0 auto;
+}
+
+.retrieva1 {
+	margin: 0 auto;
+	top: 30px;
+	width: 500px;
+}
+
+#logoimg2 {
+	width: 98%;
+	height: inherit;
+	margin-left: 1%;
+}/*滚动图片*/
+
+
+.filtr-item {
+	padding: 1rem;
+	height: 250px;
+}
+
+.filtr-item .thingIcon {
+	height: 100%;
+	width: 100%;
+}
+
+.item-desc {
+	width: 90%;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	position: absolute;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 1rem;
+	z-index: 1;
+	bottom: 1rem;
+	left: 1rem;
+	right: 1rem;
+}/*图片下的文字说明*/
+.simplefilter1 li, .simplefilter2 li, .simplefilter3 li,.sortandshuffle li {
+	color: white;
+	cursor: pointer;
+	display: inline-block;
+	text-transform: uppercase;
+	padding: 0.3rem 0.6rem;
+	background-color: #337ab7;
+}/*条件选择*/
+.simplefilter1 li.active, .simplefilter2 li.active, .simplefilter3 li.active,.sortandshuffle li.active {
+	background-color: #2bbbad;
+}/*条件选择点击样式*/
