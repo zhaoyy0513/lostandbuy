@@ -1,23 +1,43 @@
 package com.zzuli.pojo;
 
 public class Catelog {
-    private Integer cid;
+    private Integer id;
 
-    private String cname;
+    private String name;
 
-    public Integer getCid() {
-        return cid;
+    private Integer number;
+
+    private Byte status;
+
+    public Integer getId() {
+        return id;
     }
 
-    public void setCid(Integer cid) {
-        this.cid = cid;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public String getCname() {
-        return cname;
+    public String getName() {
+        return name;
     }
 
-    public void setCname(String cname) {
-        this.cname = cname == null ? null : cname.trim();
+    public void setName(String name) {
+        this.name = name == null ? null : name.trim();
+    }
+
+    public Integer getNumber() {
+        return number;
+    }
+
+    public void setNumber(Integer number) {
+        this.number = number;
+    }
+
+    public Byte getStatus() {
+        return status;
+    }
+
+    public void setStatus(Byte status) {
+        this.status = status;
     }
 }

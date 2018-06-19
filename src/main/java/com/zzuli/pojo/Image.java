@@ -1,33 +1,33 @@
 package com.zzuli.pojo;
 
 public class Image {
-    private Integer iid;
+    private Integer id;
 
-    private Integer tid;
+    private Integer goodsId;
 
-    private String iurl;
+    private String imgUrl;
 
-    public Integer getIid() {
-        return iid;
+    public Integer getId() {
+        return id;
     }
 
-    public void setIid(Integer iid) {
-        this.iid = iid;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public Integer getTid() {
-        return tid;
+    public Integer getGoodsId() {
+        return goodsId;
     }
 
-    public void setTid(Integer tid) {
-        this.tid = tid;
+    public void setGoodsId(Integer goodsId) {
+        this.goodsId = goodsId;
     }
 
-    public String getIurl() {
-        return iurl;
+    public String getImgUrl() {
+        return imgUrl;
     }
 
-    public void setIurl(String iurl) {
-        this.iurl = iurl == null ? null : iurl.trim();
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl == null ? null : imgUrl.trim();
     }
 }

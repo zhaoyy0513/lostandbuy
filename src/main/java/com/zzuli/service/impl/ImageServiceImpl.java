@@ -8,37 +8,21 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.List;
 
-@Service(value = "imageService")
+/**
+ * Created by lenovo on 2017/5/12.
+ */
+@Service("imageService")
 public class ImageServiceImpl implements ImageService {
     @Resource
     private ImageMapper imageMapper;
-
-    @Override
-    public int addImage(Image image) {
-
-        return imageMapper.insert(image);
+    public int insert(Image record) {
+        return imageMapper.insert(record);
     }
-
-    public List<Image> getImageByPrimaryKey(int imageId){
-       List<Image> image = imageMapper.selectByPrimaryKey(imageId);
+    public List<Image> getImagesByGoodsPrimaryKey(Integer goodsId) {
+        List<Image> image = imageMapper.selectByGoodsPrimaryKey(goodsId);
         return image;
     }
-
-    @Override
-    public List<Image> selectAllImages() {
-        List<Image> list = imageMapper.selectAllImages();
-        return list;
+    public int deleteImagesByGoodsPrimaryKey(Integer goodsId) {
+        return imageMapper.deleteImagesByGoodsPrimaryKey(goodsId);
     }
-
-    @Override
-    public void deleteImageByPrimaryKey(int iid) {
-        imageMapper.deleteByPrimaryKey(iid);
-    }
-
-    @Override
-    public void updateImageByPrimary(int tid, Image image) {
-        image.setTid(tid);
-        imageMapper.updateByPrimaryKey(image);
-    }
-
 }

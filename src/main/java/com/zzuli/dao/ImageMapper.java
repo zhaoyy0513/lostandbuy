@@ -1,17 +1,25 @@
 package com.zzuli.dao;
 
-import com.zzuli.pojo.Image;
-
 import java.util.List;
 
+import com.zzuli.pojo.Image;
+
 public interface ImageMapper {
-    List<Image> selectAllImages();
+    int deleteByPrimaryKey(Integer id);
 
-    List<Image> selectByPrimaryKey(Integer iid);
-
-    int deleteByPrimaryKey(Integer iid);
+    int deleteImagesByGoodsPrimaryKey(Integer goodsId);
 
     int insert(Image record);
 
-    int updateByPrimaryKey(Image image);
+    int insertSelective(Image record);
+
+    Image selectByPrimaryKey(Integer id);
+
+    int updateByPrimaryKeySelective(Image record);
+
+    int updateByPrimaryKeyWithBLOBs(Image record);
+
+    int updateByPrimaryKey(Image record);
+
+    List<Image> selectByGoodsPrimaryKey(Integer goodsId);
 }

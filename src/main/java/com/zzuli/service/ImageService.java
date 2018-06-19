@@ -1,25 +1,25 @@
 package com.zzuli.service;
 
-import com.zzuli.pojo.Image;
-
 import java.util.List;
 
+import com.zzuli.pojo.Image;
+
+/**
+ * Created by lenovo on 2017/5/12.
+ */
 public interface ImageService {
-    /*
-     * 通过id获取图片
-     * @author zyy
-     * @date 2018/6/7 16:43
-     * @param [imageId]
-     * @return com.zzuli.pojo.Image
+    int insert(Image record);
+    /**
+     * 通过商品id获取该商品的图片
+     * @param goodsId
+     * @return
      */
-    public int addImage(Image image);
-    public List<Image> getImageByPrimaryKey(int imageId);
+    public List<Image> getImagesByGoodsPrimaryKey(Integer goodsId);
 
-    public List<Image> selectAllImages();
-
-    public void deleteImageByPrimaryKey(int iid);
-
-    //更新物品图片
-    public void updateImageByPrimary(int tid,Image image);
-
+    /**
+     * 通过商品Id删除商品
+     * @param goodsId
+     * @return
+     */
+    int deleteImagesByGoodsPrimaryKey(Integer goodsId);
 }
